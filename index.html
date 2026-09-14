@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO & Meta Tags -->
+  <title>Pastel da Vila | O Sabor Que Une Pessoas | Ourinhos - SP</title>
+  <meta name="description"
+    content="Pastel da Vila em Ourinhos - SP. Pastéis artesanais crocantes por fora e recheados por dentro, café cremoso, pão na chapa, sorvetes e bebidas geladas. Faça seu pedido!">
+  <meta name="keywords"
+    content="pastel, pastelaria, pastel de carne, pastel de queijo, ourinhos, pastel da vila, lanche, comida artesanal">
+  <meta name="author" content="Pastel da Vila">
+  <meta name="theme-color" content="#050505">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Pastel da Vila | O Sabor Que Une Pessoas">
+  <meta property="og:description"
+    content="Pastéis artesanais crocantes por fora e recheados por dentro! Conheça nosso cardápio em Ourinhos - SP.">
+  <meta property="og:image" content="assets/images/logo_mascote.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo_mascote.png">
+
+  <!-- Performance: Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+  <!-- SVG Symbol Definitions (reused across the page) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </symbol>
+  </svg>
+
+
+  <!-- ========================================================================
+       1. NAVBAR FIXA COM LOGO INTEGRADA
+       ======================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Navegação Principal">
+        <!-- Logo Mascot inside Navbar -->
+        <a href="#inicio" class="nav-brand" aria-label="Pastel da Vila - Página Inicial">
+          <img src="assets/images/logo_mascote.png" alt="Logo Pastel da Vila" class="nav-brand-logo" width="74"
+            height="74" fetchpriority="high" decoding="async">
+        </a>
+
+        <!-- Desktop Navigation Items -->
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item active">
+            <a href="#inicio" class="nav-link">
+              <!-- Home Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              <span>Início</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#cardapio" class="nav-link">
+              <!-- Menu Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+              <span>Cardápio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="nav-link">
+              <!-- About / Team Heart Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <span>Sobre</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#horarios" class="nav-link">
+              <!-- Clock Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Horários</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#localizacao" class="nav-link">
+              <!-- Map Pin Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Localização</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link">
+              <!-- Mail / Contact Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Contato</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- CTA Button Right -->
+        <div class="nav-cta">
+          <button class="btn-primary" onclick="sendWhatsAppOrder()" aria-label="Faça seu pedido pelo WhatsApp">
+            <!-- WhatsApp Icon -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <use href="#icon-whatsapp" />
+            </svg>
+            <span>Faça seu pedido</span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         2. HERO SECTION COM COMPOSIÇÃO GASTRONÔMICA E VAPOR
+         ======================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Lado Esquerdo: Textos & Chamada -->
+          <div class="hero-content reveal-fade-left">
+            <!-- Pincelada Decorativa em Vermelho -->
+            <div class="hero-brush-accent" aria-hidden="true">
+              <svg viewBox="0 0 120 20" width="110" height="20">
+                <path d="M5,12 Q30,2 60,10 T115,8" stroke="#A71919" stroke-width="5" stroke-linecap="round"
+                  fill="none" />
+              </svg>
+            </div>
+
+            <!-- Título Principal em Lettering / Impact -->
+            <h1 class="hero-title">
+              <span class="hero-title-main">PASTÉIS DA VILA</span>
+              <span class="hero-title-highlight">O SABOR QUE UNE PESSOAS</span>
+            </h1>
+
+            <p class="hero-description">
+              Aqui cada pastel é feito com ingredientes selecionados, muito carinho e aquele sabor inconfundível que faz
+              você voltar sempre. Massa sequinha, crocante e recheio de verdade!
+            </p>
+
+            <!-- Ações: Botão de Pedido e Localização -->
+            <div class="hero-actions">
+              <div class="hero-btn-row">
+                <button class="btn-primary" onclick="sendWhatsAppOrder()"
+                  aria-label="Faça seu pedido agora pelo WhatsApp">
+                  <!-- WhatsApp Icon -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="#icon-whatsapp" />
+                  </svg>
+                  <span>Faça seu pedido agora</span>
+                  <span aria-hidden="true">➔</span>
+                </button>
+              </div>
+
+              <!-- Indicação da Cidade -->
+              <div class="hero-location-badge">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+                <span>Ourinhos - SP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lado Direito: Composição Visual Gastronômica (Pastel em Destaque) -->
+          <div class="hero-visual-wrapper reveal-fade-right">
+
+            <!-- Grande Pastel Quente Recheado em Primeiro Plano -->
+            <div class="hero-pastel-main">
+              <div class="hero-pastel-img-box">
+                <video src="assets/video_pastel.mp4" autoplay loop muted playsinline width="560" height="315"
+                  aria-label="Vídeo do pastel crocante frito na hora"></video>
+
+                <!-- Vapor Animado Sobre o Pastel -->
+                <div class="steam-container" aria-hidden="true">
+                  <div class="steam-cloud steam-cloud-1"></div>
+                  <div class="steam-cloud steam-cloud-2"></div>
+                  <div class="steam-cloud steam-cloud-3"></div>
+                </div>
+
+                <!-- Partículas de brasas sutis -->
+                <div class="ember-particle" style="top: 20%; left: 30%;" aria-hidden="true"></div>
+                <div class="ember-particle" style="top: 60%; right: 25%; animation-delay: 1.2s;" aria-hidden="true">
+                </div>
+                <div class="ember-particle" style="top: 40%; left: 70%; animation-delay: 2.1s;" aria-hidden="true">
+                </div>
+              </div>
+
+              <!-- Chamada Manuscrita com Flecha -->
+              <div class="hero-callout">
+                <span class="hero-callout-text">Crocante por fora,<br>recheado por dentro! ♡</span>
+                <svg class="hero-callout-arrow" viewBox="0 0 50 50" aria-hidden="true">
+                  <path d="M40,5 Q20,15 15,35 M15,35 L28,30 M15,35 L12,22" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. FAIXA DE BENEFÍCIOS (4 BLOCOS COM DIVISORES)
+         ======================================================================== -->
+    <section class="benefits-bar" aria-label="Nossos Diferenciais">
+      <div class="container">
+        <div class="benefits-grid">
+
+          <!-- Bloco 1: Ingredientes de Qualidade -->
+          <div class="benefit-item reveal-fade-up delay-1">
+            <div class="benefit-icon-circle">
+              <!-- Leaf Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+              </svg>
+            </div>
+            <div class="benefit-text">
+              INGREDIENTES<br>DE QUALIDADE
+            </div>
+          </div>
+
+          <!-- Bloco 2: Sabor Que Conquista -->
+          <div class="benefit-item reveal-fade-up delay-2">
+            <div class="benefit-icon-circle">
+              <!-- Smile Face Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9" stroke-width="3"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9" stroke-width="3"></line>
+              </svg>
+            </div>
+            <div class="benefit-text">
+              SABOR QUE<br>CONQUISTA
+            </div>
+          </div>
+
+          <!-- Bloco 3: Feito Na Hora -->
+          <div class="benefit-item reveal-fade-up delay-3">
+            <div class="benefit-icon-circle">
+              <!-- Heart Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+              </svg>
+            </div>
+            <div class="benefit-text">
+              FEITO NA<br>HORA
+            </div>
+          </div>
+
+          <!-- Bloco 4: O Preferido Da Vila -->
+          <div class="benefit-item reveal-fade-up delay-4">
+            <div class="benefit-icon-circle">
+              <!-- Star Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+            </div>
+            <div class="benefit-text">
+              O PREFERIDO<br>DA VILA
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. SEÇÃO CARDÁPIO PRINCIPAL (3 SABORES TRADICIONAIS)
+         ======================================================================== -->
+    <section class="menu-section" id="cardapio">
+      <div class="container">
+
+        <!-- Cabeçalho da Seção -->
+        <div class="menu-header">
+          <div>
+            <span class="menu-title-tag">NOSSO CARDÁPIO</span>
+            <h2 class="menu-title-main">TRÊS SABORES,<br>O MESMO PRAZER!</h2>
+          </div>
+          <div class="menu-header-badge">
+            <span class="menu-header-note">Pastéis sempre quentinhos!</span>
+            <span class="menu-header-sparkles" aria-hidden="true">⚡</span>
+          </div>
+        </div>
+
+        <!-- Grade com os 3 Cards de Pastéis -->
+        <div class="cards-grid">
+
+          <!-- CARD 1: Pastel de Carne -->
+          <article class="pastel-card reveal-scale delay-1">
+            <div class="pastel-card-media">
+              <img src="assets/images/pastel_carne.png" alt="Pastel de Carne recheado com carne moída temperada"
+                width="380" height="380" loading="lazy" decoding="async">
+            </div>
+            <div class="pastel-card-body">
+              <h3 class="pastel-card-title">PASTEL DE CARNE</h3>
+              <p class="pastel-card-desc">Recheio tradicional de carne temperada na medida certa!</p>
+              <div class="pastel-card-footer">
+                <span class="brush-badge">R$ 10,00</span>
+                <button class="order-pastel-btn" data-order-item="Pastel de Carne" data-order-price="R$ 10,00">
+                  <span>Pedir agora</span>
+                  <span aria-hidden="true">➔</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2: Pastel de Queijo -->
+          <article class="pastel-card reveal-scale delay-2">
+            <div class="pastel-card-media">
+              <img src="assets/images/pastel_queijo.png" alt="Pastel de Queijo com queijo especial derretido esticando"
+                width="380" height="380" loading="lazy" decoding="async">
+            </div>
+            <div class="pastel-card-body">
+              <h3 class="pastel-card-title">PASTEL DE QUEIJO</h3>
+              <p class="pastel-card-desc">Queijo especial derretido esticando e cremoso em cada mordida. Puro sabor!</p>
+              <div class="pastel-card-footer">
+                <span class="brush-badge">R$ 12,00</span>
+                <button class="order-pastel-btn" data-order-item="Pastel de Queijo" data-order-price="R$ 12,00">
+                  <span>Pedir agora</span>
+                  <span aria-hidden="true">➔</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3: Pastel de Carne com Queijo -->
+          <article class="pastel-card reveal-scale delay-3">
+            <div class="pastel-card-media">
+              <img src="assets/images/pastel_carne_queijo.png"
+                alt="Pastel de Carne com Queijo com encontro da carne moída e queijo derretido" width="380" height="380"
+                loading="lazy" decoding="async">
+            </div>
+            <div class="pastel-card-body">
+              <h3 class="pastel-card-title">PASTEL DE CARNE COM QUEIJO</h3>
+              <p class="pastel-card-desc">O clássico encontro da carne moída com o queijo derretido. Simplesmente
+                delicioso!</p>
+              <div class="pastel-card-footer">
+                <span class="brush-badge">R$ 15,00</span>
+                <button class="order-pastel-btn" data-order-item="Pastel de Carne com Queijo"
+                  data-order-price="R$ 15,00">
+                  <span>Pedir agora</span>
+                  <span aria-hidden="true">➔</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. SEÇÃO DE PRODUTOS SECUNDÁRIOS (SORVETES | EXTRAS | BEBIDAS)
+         ======================================================================== -->
+    <section class="secondary-section" aria-label="Acompanhamentos e Bebidas">
+      <div class="container">
+        <div class="secondary-grid">
+
+          <!-- COLUNA 1: SORVETES -->
+          <div class="sec-col reveal-fade-up delay-1">
+            <div class="sec-header">
+              <!-- Popsicle / Ice Cream SVG -->
+              <svg class="sec-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18 11V6a6 6 0 0 0-12 0v5a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2z"></path>
+                <path d="M12 13v8"></path>
+              </svg>
+              <h3 class="sec-title">SORVETES</h3>
+            </div>
+            <h4 class="sec-subtitle">REFRESCÂNCIA EM TODOS OS MOMENTOS!</h4>
+
+            <ul class="price-list">
+              <li class="price-item">
+                <span class="price-name">SORVETE DE FRUTA</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 2,50</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">SORVETE DE LEITE</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 3,00</span>
+              </li>
+            </ul>
+
+            <!-- Foto dos 4 Picolés -->
+            <div class="sec-media-box">
+              <img src="assets/images/picoles_sorvetes.png"
+                alt="Picolés artesanais de morango, framboesa, maracujá e coco" width="380" height="170" loading="lazy" decoding="async">
+            </div>
+
+            <p class="sec-footer-note">O sabor perfeito para o seu momento! ♡</p>
+          </div>
+
+          <!-- COLUNA 2: EXTRAS -->
+          <div class="sec-col reveal-fade-up delay-2">
+            <div class="sec-header">
+              <!-- Plus / Extra SVG -->
+              <svg class="sec-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+              <h3 class="sec-title">EXTRAS</h3>
+            </div>
+            <h4 class="sec-subtitle">DO CAFÉ AO PÃO NA CHAPA CROCANTE</h4>
+
+            <ul class="price-list">
+              <li class="price-item">
+                <span class="price-name">CAFÉ</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 2,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">PINGADO</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 4,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">PÃO NA CHAPA</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 4,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">PÃO COM QUEIJO</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 7,00</span>
+              </li>
+            </ul>
+
+            <!-- Fotos Café e Pão na Chapa Lado a Lado -->
+            <div class="sec-media-dual">
+              <div class="sec-media-sub">
+                <img src="assets/images/cafe.png" alt="Xícara de café quente com pires" width="180" height="150"
+                  loading="lazy" decoding="async">
+              </div>
+              <div class="sec-media-sub">
+                <img src="assets/images/pao_na_chapa.png"
+                  alt="Pão na chapa tostado com queijo derretido em prato rústico" width="190" height="150"
+                  loading="lazy" decoding="async">
+              </div>
+            </div>
+
+            <p class="sec-footer-note">Acompanhamentos que fazem a diferença!</p>
+          </div>
+
+          <!-- COLUNA 3: BEBIDAS -->
+          <div class="sec-col reveal-fade-up delay-3">
+            <div class="sec-header">
+              <!-- Drink Can / Bottle SVG -->
+              <svg class="sec-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="6" width="14" height="15" rx="3"></rect>
+                <line x1="9" y1="3" x2="15" y2="3"></line>
+                <line x1="12" y1="3" x2="12" y2="6"></line>
+              </svg>
+              <h3 class="sec-title">BEBIDAS</h3>
+            </div>
+            <h4 class="sec-subtitle">REFRIGERANTES, ÁGUAS E SUCOS GELADINHOS</h4>
+
+            <ul class="price-list">
+              <li class="price-item">
+                <span class="price-name">COCA-COLA LATA</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 6,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">COCA-COLA 600 ML</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 8,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">COCA-COLA 1L</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 10,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">FANTA LATA</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 6,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">FANTA 200 ML</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 5,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">SPRITE LATA</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 6,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">CONQUISTA 2 LT</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 8,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">CONQUISTA 200 ML</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 5,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">ÁGUA</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 3,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">ÁGUA COM GÁS</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 4,00</span>
+              </li>
+              <li class="price-item">
+                <span class="price-name">SUCO DEL VALLE 200 ML</span>
+                <span class="price-dots"></span>
+                <span class="price-val">R$ 4,00</span>
+              </li>
+            </ul>
+
+            <!-- Foto Embalagens de Bebidas -->
+            <div class="sec-media-box">
+              <img src="assets/images/bebidas_geladas.png"
+                alt="Latas geladas de Coca-Cola, Fanta, Sprite e garrafa de água mineral" width="380" height="95"
+                loading="lazy" decoding="async">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. SEÇÃO SOBRE O PASTEL DA VILA (DEDICADA COM FOTO DOS FUNDADORES)
+         ======================================================================== -->
+    <section class="about-section" id="sobre" aria-label="Sobre o Pastel da Vila">
+      <div class="container">
+
+        <!-- Cabeçalho da Seção -->
+        <div class="about-header text-center reveal-fade-up">
+          <div class="about-badge">
+            <svg class="about-chef-hat" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z">
+              </path>
+              <line x1="6" y1="17" x2="18" y2="17"></line>
+            </svg>
+            <span>NOSSA HISTÓRIA & FAMÍLIA</span>
+          </div>
+          <h2 class="about-main-title">SOBRE O PASTEL DA VILA</h2>
+          <p class="about-subtitle">Tradição artesanal, carinho e o sabor que une pessoas em Ourinhos - SP</p>
+        </div>
+
+        <!-- Grid Dedicado: Foto do Casal + História -->
+        <div class="about-dedicated-grid">
+
+          <!-- Lado Visual: Foto do Casal com Moldura de Destaque -->
+          <div class="about-visual-col reveal-fade-right">
+            <div class="about-couple-frame">
+              <div class="about-couple-image-box">
+                <img src="assets/images/casal_pastelaria.jpg"
+                  alt="Casal fundador do Pastel da Vila com avental e touca de chef" width="480" height="480"
+                  loading="lazy" decoding="async" class="about-couple-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Lado Conteúdo: Narrativa, Valores e Pilares -->
+          <div class="about-story-col reveal-fade-left">
+            <span class="about-story-kicker">O SABOR QUE CONQUISTA</span>
+            <h3 class="about-story-title">Muito mais que um pastel: uma história de amor, dedicação e sabor de verdade
+            </h3>
+
+            <div class="about-story-paragraphs">
+              <p>
+                O <strong>Pastel da Vila</strong> nasceu de um sonho compartilhado pelo casal de fundadores: criar um
+                ponto de encontro acolhedor onde amigos e famílias pudessem saborear o verdadeiro pastel artesanal, com
+                massa fininha, estalando de crocante e recheio generoso do começo ao fim.
+              </p>
+              <p>
+                Colocamos a mão na massa todos os dias com touca na cabeça, avental e muito orgulho. Não usamos atalhos
+                nem ingredientes industriais: tudo é selecionado a dedo, temperado com receita própria e frito na hora
+                para chegar até a sua mesa sempre dourado e sequinho.
+              </p>
+              <p>
+                Para nós, ver o sorriso no rosto de cada cliente e ouvir um <em>"esse é o melhor pastel que já
+                  comi"</em> é o que nos move a fazer sempre o melhor!
+              </p>
+            </div>
+
+            <!-- Os 4 Pilares de Qualidade -->
+            <div class="about-highlights-grid">
+              <div class="about-highlight-card">
+                <div class="about-hl-icon">🥟</div>
+                <div>
+                  <h4>Massa Artesanal</h4>
+                  <p>Leve, sequinha e crocante</p>
+                </div>
+              </div>
+
+              <div class="about-highlight-card">
+                <div class="about-hl-icon">🥩</div>
+                <div>
+                  <h4>Recheio Farto</h4>
+                  <p>Carnes e queijos de qualidade</p>
+                </div>
+              </div>
+
+              <div class="about-highlight-card">
+                <div class="about-hl-icon">⚡</div>
+                <div>
+                  <h4>Frito na Hora</h4>
+                  <p>Sempre quentinho e fresco</p>
+                </div>
+              </div>
+
+              <div class="about-highlight-card">
+                <div class="about-hl-icon">❤️</div>
+                <div>
+                  <h4>Feito pra Você</h4>
+                  <p>Atendimento familiar caloroso</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frase de Agradecimento Manuscrita -->
+            <div class="about-signature-box">
+              <p class="about-gratitude">"Obrigado por fazer parte da nossa história! ♡"</p>
+              <span class="about-signature-sub">— Família Pastel da Vila</span>
+            </div>
+
+            <!-- Ações -->
+            <div class="about-cta-row">
+              <a href="#cardapio" class="btn-primary">
+                <span>Conheça Nosso Cardápio</span>
+                <span aria-hidden="true">➔</span>
+              </a>
+              <button class="btn-whatsapp-outline" onclick="sendWhatsAppOrder()">
+                <svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20">
+                  <use href="#icon-whatsapp" />
+                </svg>
+                <span>Fazer Pedido no WhatsApp</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. SEÇÃO DE LOCALIZAÇÃO E HORÁRIOS DE ATENDIMENTO
+         ======================================================================== -->
+    <section class="location-section" id="localizacao" aria-label="Localização e Horários de Atendimento">
+      <div class="container">
+
+        <!-- Cabeçalho -->
+        <div class="location-header text-center reveal-fade-up">
+          <div class="location-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>ONDE ESTAMOS & ATENDIMENTO</span>
+          </div>
+          <h2 class="location-main-title">VENHA NOS VISITAR</h2>
+        </div>
+
+        <div class="location-grid">
+
+          <!-- Card 1: Endereço & Localização -->
+          <div class="location-card reveal-fade-left">
+            <div class="loc-card-header">
+              <div class="loc-icon-bubble">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <span class="loc-kicker">NOSSO ENDEREÇO</span>
+                <h3 class="loc-title">PASTELARIA DA VILA</h3>
+              </div>
+            </div>
+
+            <div class="loc-address-box">
+              <p class="loc-address-street">R. ANTÔNIO ZAKI ABUCHAM, 294</p>
+              <p class="loc-address-city">OURINHOS - SP</p>
+              <p class="loc-address-tip">Ambiente acolhedor e familiar para comer na hora ou retirar quentinho!</p>
+            </div>
+
+            <div class="loc-brand-seal">
+              <img src="assets/images/logo_mascote.png" alt="Mascote Pastel da Vila" width="60" height="60"
+                loading="lazy" decoding="async">
+              <span>O sabor artesanal de Ourinhos feito na hora para você!</span>
+            </div>
+
+            <a href="https://maps.google.com/?q=R.+Antônio+Zaki+Abucham,+294+-+Ourinhos+-+SP" target="_blank"
+              rel="noopener noreferrer" class="btn-location-map">
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                <line x1="8" y1="2" x2="8" y2="18"></line>
+                <line x1="16" y1="6" x2="16" y2="22"></line>
+              </svg>
+              <span>Abrir no Google Maps</span>
+              <span aria-hidden="true">➔</span>
+            </a>
+          </div>
+
+          <!-- Card 2: Horários de Atendimento -->
+          <div class="location-card location-card-hours reveal-fade-right" id="horarios">
+            <div class="loc-card-header">
+              <div class="loc-icon-bubble">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <span class="loc-kicker">HORÁRIOS DE FUNCIONAMENTO</span>
+                <h3 class="loc-title">SEMPRE FRESQUINHO</h3>
+              </div>
+            </div>
+
+            <div class="loc-hours-list">
+              <div class="loc-hour-item">
+                <div class="loc-hour-day">
+                  <strong>Segunda a Sábado</strong>
+                  <span>Café da manhã e almoço</span>
+                </div>
+                <div class="loc-hour-time">07:00 às 13:30</div>
+              </div>
+
+              <div class="loc-hour-item highlight-night">
+                <div class="loc-hour-day">
+                  <strong>Sexta-feira</strong>
+                  <span>Noite do Pastel</span>
+                </div>
+                <div class="loc-hour-time">17:00 às 22:00</div>
+              </div>
+
+              <div class="loc-hour-item highlight-night">
+                <div class="loc-hour-day">
+                  <strong>Sábado</strong>
+                  <span>Noite do Pastel</span>
+                </div>
+                <div class="loc-hour-time">17:00 às 22:00</div>
+              </div>
+            </div>
+
+            <button class="btn-primary" onclick="sendWhatsAppOrder()" aria-label="Faça seu pedido agora pelo WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-whatsapp" />
+              </svg>
+              <span>Faça seu pedido agora</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       7. RODAPÉ MINIMALISTA, MODERNO E LIMPO
+       ======================================================================== -->
+  <footer class="site-footer" id="contato">
+    <div class="container">
+      <div class="footer-clean-wrapper">
+
+        <!-- Coluna 1: Marca & Identidade -->
+        <div class="footer-brand-clean">
+          <img src="assets/images/logo_mascote.png" alt="Mascote Pastel da Vila" class="footer-logo-clean" width="56"
+            height="56" loading="lazy" decoding="async">
+          <div class="footer-brand-info">
+            <h3 class="footer-brand-title">Pastel da Vila</h3>
+            <p class="footer-brand-tagline">O sabor que une pessoas</p>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Endereço & Contato -->
+        <div class="footer-contact-clean">
+          <p class="footer-address">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="footer-icon">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5 2.5-2.5 2.5z" />
+            </svg>
+            <span>R. Antônio Zaki Abucham, 294 • Ourinhos - SP</span>
+          </p>
+          <a href="javascript:void(0)" onclick="sendWhatsAppOrder()" class="footer-whatsapp-link"
+            aria-label="Chamar no WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="footer-icon">
+              <use href="#icon-whatsapp" />
+            </svg>
+            <span>(14) 99853-6770</span>
+          </a>
+        </div>
+
+        <!-- Coluna 3: Redes & Pedido Rápido (Sem Facebook) -->
+        <div class="footer-actions-clean">
+          <a href="https://www.instagram.com/pastel_da_vila014/" target="_blank" rel="noopener noreferrer"
+            class="footer-insta-pill" aria-label="Acessar Instagram @pastel_da_vila014">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="insta-icon">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor"
+                stroke-width="2"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor"
+                stroke-width="2"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"></line>
+            </svg>
+            <span>@pastel_da_vila014</span>
+          </a>
+
+          <button class="btn-primary footer-cta-clean" onclick="sendWhatsAppOrder()"
+            aria-label="Fazer pedido pelo WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <use href="#icon-whatsapp" />
+            </svg>
+            <span>Pedir no WhatsApp</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Barra de Direitos Autorais -->
+      <div class="footer-bottom-clean">
+        <p class="footer-copyright">
+          © 2026 <strong>Pastel da Vila</strong>. Todos os direitos reservados.
+        </p>
+        <p class="footer-city-tag">
+          Ourinhos - SP
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       8. BOTÃO FLUTUANTE DO WHATSAPP COM BADGE PULSANTE
+       ======================================================================== -->
+  <button onclick="sendWhatsAppOrder()" class="floating-whatsapp" aria-label="Abrir WhatsApp para fazer pedido">
+    <div class="floating-whatsapp-btn floating-anim">
+      <span class="floating-badge" aria-hidden="true"></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <use href="#icon-whatsapp" />
+      </svg>
+    </div>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

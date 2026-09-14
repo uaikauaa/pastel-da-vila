@@ -1,0 +1,187 @@
+/* ==========================================================================
+   PASTEL DA VILA - ANIMATIONS CSS
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. STEAM & SMOKE ANIMATIONS
+   -------------------------------------------------------------------------- */
+@keyframes steamRise {
+  0% {
+    transform: translateY(0) scale(0.8) rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.45;
+  }
+  60% {
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(-90px) scale(1.6) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+@keyframes steamRiseDelayed {
+  0% {
+    transform: translateY(0) scale(0.9) rotate(0deg);
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-110px) scale(1.8) rotate(-18deg);
+    opacity: 0;
+  }
+}
+
+.steam-cloud-1 {
+  bottom: 25%;
+  left: 35%;
+  animation: steamRise 5s infinite ease-in-out;
+}
+
+.steam-cloud-2 {
+  bottom: 30%;
+  left: 55%;
+  animation: steamRiseDelayed 6.5s infinite ease-in-out 1.8s;
+}
+
+.steam-cloud-3 {
+  bottom: 20%;
+  left: 45%;
+  animation: steamRise 7s infinite ease-in-out 3.2s;
+}
+
+/* --------------------------------------------------------------------------
+   2. EMBER & SPARK PARTICLES
+   -------------------------------------------------------------------------- */
+@keyframes emberGlow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.15);
+  }
+}
+
+.ember-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--color-orange-light);
+  box-shadow: 0 0 10px var(--color-orange), 0 0 20px #FF9418;
+  animation: emberGlow 3s infinite ease-in-out;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   3. PULSE & GLOW ANIMATIONS
+   -------------------------------------------------------------------------- */
+@keyframes pulseBadge {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(255, 122, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 122, 0, 0);
+  }
+}
+
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.floating-anim {
+  animation: subtleFloat 4s ease-in-out infinite;
+}
+
+/* --------------------------------------------------------------------------
+   4. SCROLL REVEAL ANIMATIONS
+   -------------------------------------------------------------------------- */
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-fade-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-fade-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-fade-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-fade-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* --------------------------------------------------------------------------
+   5. REDUCED MOTION ACCESSIBILITY
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal-fade-up,
+  .reveal-fade-left,
+  .reveal-fade-right,
+  .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
