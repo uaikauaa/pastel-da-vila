@@ -2,8 +2,8 @@
   "name": "pastel-da-vila",
   "version": "1.0.0",
   "description": "Pastel da Vila - Cardápio e Pedidos",
-  "main": "server.js",
   "scripts": {
+    "build": "echo 'Static build ready'",
     "dev": "node server.js",
     "start": "node server.js"
   },
